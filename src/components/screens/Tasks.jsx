@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 
 import { GenericListScreen } from "../shared/GenericListScreen/GenericListScreen";
 
-import { NotesContext } from "@/services/Notes/constants";
+import { NotesContext } from "@/services/Notes/NotesProvider";
 
 export const Tasks = () => {
   const {

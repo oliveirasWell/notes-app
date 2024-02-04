@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import { NoteScreens } from "../navigation/screensNames/Notes";
 import { GenericListScreen } from "../shared/GenericListScreen/GenericListScreen";
 
-import { NotesContext } from "@/services/Notes/constants";
+import { NotesContext } from "@/services/Notes/NotesProvider";
 
 export const Notes = () => {
   const navigation = useNavigation();

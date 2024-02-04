@@ -3,14 +3,18 @@ import React from "react";
 
 import { Notes } from "../../screens/Notes";
 import { Tasks } from "../../screens/Tasks";
+import { NoteScreens } from "../screensNames/Notes";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
 export const NotesNavigator = () => {
   return (
-    <Navigator initialRouteName="Notes" screenOptions={{ headerShown: false }}>
-      <Screen name="Notes" component={Notes} />
-      <Screen name="Tasks" component={Tasks} />
+    <Navigator
+      initialRouteName={NoteScreens.NOTES}
+      screenOptions={{ headerShown: false }}
+    >
+      <Screen name={NoteScreens.NOTES} component={Notes} />
+      <Screen name={NoteScreens.TASKS} component={Tasks} />
     </Navigator>
   );
 };

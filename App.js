@@ -4,7 +4,7 @@ import React from "react";
 
 import { BottomTabNavigator } from "./src/components/navigation/stacks/BottomTabNavigator";
 
-import { NotesProvider } from "@/services/Notes/constants";
+import { NotesProvider } from "@/services/Notes/NotesProvider";
 
 export default () => {
   const [fontsLoaded] = useFonts({
